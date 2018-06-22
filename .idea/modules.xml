@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CommonApp.iml" filepath="$PROJECT_DIR$/CommonApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-ui/common-ui.iml" filepath="$PROJECT_DIR$/common-ui/common-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common_annotations/common_annotations.iml" filepath="$PROJECT_DIR$/common_annotations/common_annotations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common_compiler/common_compiler.iml" filepath="$PROJECT_DIR$/common_compiler/common_compiler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common_core/commoncore.iml" filepath="$PROJECT_DIR$/common_core/commoncore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common_ec/commonec.iml" filepath="$PROJECT_DIR$/common_ec/commonec.iml" />
+    </modules>
+  </component>
+</project>
