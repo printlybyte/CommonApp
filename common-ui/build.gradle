@@ -40,6 +40,10 @@ dependencies {
     //Banner依赖
     compile 'com.bigkoo:convenientbanner:2.0.5'
     compile 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
+
+
+    compile 'com.android.support:support-v4:2.2.4'
+    compile 'cn.bingoogolapple:bga-banner:2.2.4@aar'
     //auto
     provided 'com.google.auto.value:auto-value:1.4.1'
     annotationProcessor "com.google.auto.value:auto-value:1.4.1"

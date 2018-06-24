@@ -4,5 +4,9 @@
     <file url="file://$PROJECT_DIR$/common_annotations/src/main/java/com/lgd/common_annotations/AppRegisterGenerator.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/common_annotations/src/main/java/com/lgd/common_annotations/EntryGenerator.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/common_annotations/src/main/java/com/lgd/common_annotations/PayEntryGenerator.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/common_compiler/src/main/java/com/lgd/common_compiler/AppRegisterVisitor.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/common_compiler/src/main/java/com/lgd/common_compiler/EntryVisitor.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/common_compiler/src/main/java/com/lgd/common_compiler/LatteProcessor.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/common_compiler/src/main/java/com/lgd/common_compiler/PayEntryVisitor.java" charset="GBK" />
   </component>
 </project>

@@ -1,6 +1,9 @@
 package com.lgd.commonec.ec.main;
 
 import android.graphics.Color;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.view.WindowManager;
 
 import com.lgd.common_ui.recycler.MultipleRecyclerAdapter;
 import com.lgd.common_ui.recycler.MultipleViewHolder;
@@ -58,5 +61,15 @@ public class EcBottomDelegate extends BaseBottomDelegate {
     @Override
     public int setClickedColor() {
         return Color.parseColor("#ffff8800");
+    }
+
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        //取消全屏幕显示
+        _mActivity. getWindow().clearFlags(
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
     }
 }

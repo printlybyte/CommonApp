@@ -12,7 +12,7 @@ import javax.lang.model.type.TypeMirror;
 import javax.lang.model.util.SimpleAnnotationValueVisitor7;
 
 /**
- * Created by å‚…ä»¤æ° on 2017/4/22
+ * Created by ¸µÁî½Ü on 2017/4/22
  */
 final class PayEntryVisitor extends SimpleAnnotationValueVisitor7<Void, Void> {
 
@@ -44,7 +44,7 @@ final class PayEntryVisitor extends SimpleAnnotationValueVisitor7<Void, Void> {
                         .build();
 
         final JavaFile javaFile = JavaFile.builder(mPackageName + ".wxapi", targetActivity)
-                .addFileComment("å¾®ä¿¡æ”¯ä»˜å…¥å£æ–‡ä»¶")
+                .addFileComment("Î¢ĞÅÖ§¸¶Èë¿ÚÎÄ¼ş")
                 .build();
         try {
             javaFile.writeTo(FILER);

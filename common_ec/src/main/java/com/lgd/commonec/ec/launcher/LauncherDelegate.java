@@ -6,6 +6,8 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.AppCompatTextView;
 import android.view.View;
+import android.view.WindowManager;
+import android.widget.Toast;
 
 
 import com.lgd.common_ui.launcher.ILauncherListener;
@@ -19,6 +21,7 @@ import com.lgd.commoncore.util.timer.BaseTimerTask;
 import com.lgd.commoncore.util.timer.ITimerListener;
 import com.lgd.commonec.ec.R;
 import com.lgd.commonec.ec.R2;
+import com.lgd.commonec.ec.sign.SignInDelegate;
 
 import java.text.MessageFormat;
 import java.util.Timer;
@@ -64,7 +67,16 @@ public class LauncherDelegate extends LatteDelegate implements ITimerListener {
     }
 
     @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        // 设置全屏
+        _mActivity.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+    }
+
+    @Override
     public Object setLayout() {
+
         return R.layout.delegate_launcher;
     }
 
@@ -76,7 +88,8 @@ public class LauncherDelegate extends LatteDelegate implements ITimerListener {
     //判断是否显示滑动启动页
     private void checkIsShowScroll() {
         if (!LattePreference.getAppFlag(ScrollLauncherTag.HAS_FIRST_LAUNCHER_APP.name())) {
-            getSupportDelegate().start(new LauncherScrollDelegate(), SINGLETASK);
+//            getSupportDelegate().start(new LauncherScrollDelegate(),SINGLETASK );
+            getSupportDelegate().start(new LauncherScrollCostomDelegate(),SINGLETASK );
         } else {
             //检查用户是否登录了APP
             AccountManager.checkAccount(new IUserChecker() {

@@ -1,5 +1,6 @@
 package com.lgd.commoncore.activitys;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -23,7 +24,7 @@ public abstract class ProxyActivity extends AppCompatActivity implements ISuppor
     private final SupportActivityDelegate DELEGATE = new SupportActivityDelegate(this);
 
     public abstract LatteDelegate setRootDelegate();
-
+    public static final int DEFAULT_COLOR = Color.parseColor("#ffff8800");
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
