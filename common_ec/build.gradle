@@ -38,5 +38,5 @@ dependencies {
     //圆形图片
     compile 'de.hdodenhof:circleimageview:2.1.0'
     compile files('libs/alipaySdk-20161222.jar')
-//    compile(name: 'conmonutils-debug', ext: 'aar')
+//
 }
