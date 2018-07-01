@@ -81,6 +81,7 @@ public class ExampleActivity extends ProxyActivity implements
                 Toast.makeText(this, "启动结束，用户登录了", Toast.LENGTH_LONG).show();
                 getSupportDelegate().start(new EcBottomDelegate());
                 break;
+
             case NOT_SIGNED:
                 Toast.makeText(this, "启动结束，用户没登录", Toast.LENGTH_LONG).show();
                 getSupportDelegate().start(new SignInDelegate());

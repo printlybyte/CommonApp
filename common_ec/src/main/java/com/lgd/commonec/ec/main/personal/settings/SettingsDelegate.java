@@ -85,6 +85,14 @@ public class SettingsDelegate extends LatteDelegate {
                 .setText("关于")
                 .build();
 
+
+        final ListBean exit = new ListBean.Builder()
+                .setItemType(ListItemType.ITEM_NORMAL)
+                .setId(2)
+                .setDelegate(new AboutDelegate())
+                .setText("关于")
+                .build();
+
         final List<ListBean> data = new ArrayList<>();
         data.add(push);
         data.add(about);

@@ -5,6 +5,7 @@ import android.support.multidex.MultiDexApplication;
 import com.joanzapata.iconify.fonts.FontAwesomeModule;
 import com.lgd.commoncore.app.Latte;
 import com.lgd.commoncore.net.interceptors.DebugInterceptor;
+import com.lgd.commonec.ec.database.DatabaseManager;
 import com.lgd.commonec.ec.icon.FontEcModule;
 
 /**
@@ -24,12 +25,12 @@ public class ExampleApp extends MultiDexApplication {
                 .withInterceptor(new DebugInterceptor("test", R.raw.test))
 //                .withWeChatAppId("你的微信AppKey")
 //                .withWeChatAppSecret("你的微信AppSecret")
-//                .withJavascriptInterface("latte")
+                .withJavascriptInterface("latte")
 //                .withWebEvent("test", new TestEvent())
 //                .withWebEvent("share", new ShareEvent())
                 .configure();
 //        initStetho();
-//        DatabaseManager.getInstance().init(this);
+        DatabaseManager.getInstance().init(this);
 
         //开启极光推送
 //        JPushInterface.setDebugMode(true);
